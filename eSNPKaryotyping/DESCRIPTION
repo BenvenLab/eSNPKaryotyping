@@ -4,7 +4,6 @@ Version: 0.0.0.1
 Description: Genomic instability has profound effects on cellular phenotypes. Studies have shown that pluripotent cells with abnormal karyotypes may grow faster, differentiate less and become more resistance to apoptosis. Previously, we showed that microarray gene expression profiles can be utilized for the analysis of chromosomal aberrations by comparing gene expression levels between normal and aneuploid samples. Here we adopted this method for RNA-Seq data and report a new methodology, called eSNP-Karyotyping, for the detection of chromosomal aberrations, based on measuring the ratio of expression between the two alleles.  We demonstrate its ability to detect chromosomal gains and losses in pluripotent cells and their derivatives, as well as meiotic recombination patterns. This novel method is advantageous since it does not require matched diploid samples for comparison, is less sensitive to global expression changes caused by the aberration, and utilizes already available gene expression profiles to determine chromosomal aberrations.
 Depends:R (>= 3.2.1)
 Depends: zoo,gplots
-License: What license is it under?
 LazyData: true
 RoxygenNote: 5.0.1.9000
-URL: https://github.com/uriwsbn/eSNPKaryotyping.git
+URL: https://github.com/BenvenLab/eSNPKaryotyping.git
