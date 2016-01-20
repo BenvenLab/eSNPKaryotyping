@@ -4,7 +4,7 @@
 #' @param Table The deletion table containing the output of the DeletionTable function
 #' @param window the block size in bp, usually 1500000
 #' @param Max How many Heterozygouse SNP need to be in a block to get the full color, usually 6
-#' @param Max How many Homozygouse SNP need to be in a block to get the full color, usually 60
+#' @param Max2 How many Homozygouse SNP need to be in a block to get the full color, usually 60
 #' @param Organism "Human" or "Mouse"
 #' @export
 #' @return None
@@ -14,6 +14,7 @@ Plot_Zygosity_Blocks<-function(Table,Window,Max,Max2,Organism){
   max=Max
   max2=Max2
   window=Window
+  tbl=Table
   
   if(Organism == "Human"){
     centromere_pos=c(125,93.3,91,50.4,48.4,61,59.9,45.6,49,40.2,53.7,35.8,17.9,17.6,19,36.6,24,17.2,26.5,27.5,13.2,14.7,60.6,12.5)

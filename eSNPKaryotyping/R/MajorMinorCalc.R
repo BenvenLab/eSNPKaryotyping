@@ -10,8 +10,8 @@
 
 MajorMinorCalc<-function(Table,minDP,maxDP,minAF){
   
-  table[is.na(table)] = 0
-  newTable = table[table$DP >= minDP,]
+  Table[is.na(Table)] = 0
+  newTable = Table[Table$DP >= minDP,]
   newTable = newTable[newTable$DP <= maxDP,]
   AF1 = newTable$AD1/newTable$DP
   AF2 = newTable$AD2/newTable$DP
