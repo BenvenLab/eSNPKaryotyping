@@ -1,15 +1,15 @@
 
 
+**********************
 # eSNPKaryotyping
 Analysis of Chromosomal Aberrations from RNA-Seq sequencing data.
 
 
   Weissbein et al, 2015.  
 
-**********************
-***   Before Use   *** 
-**********************
-  
+
+  Before Use  
+
 # The following programs should be installed on your computer:
 # 1. Tophat2 (install to the Linux path. If not, give the full path to the tophat2 function in the Tophat function)
 # 2. Bowtie2
@@ -40,10 +40,9 @@ Edit_dbSNP_Files(Directory = , File_Name = , Organism = )
 
 
 
-***********************************************
+**********************
 ***   Genomic integrity analysis workflow   ***
-***********************************************
-  
+**********************
  
 # 1. Open SRA file into FASTQ file. The script will create new directory called FASTQ with the fastq files:
 OpenSRA(File = ,Library_Type = ,SRAPath = )
