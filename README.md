@@ -13,9 +13,14 @@
 
 
     Before Use  
+   
+    # Install eSNP-Karyotyping Package:
+    # 1. Install.packages("devtools")
+    # 2. Run the following line: install_github("BenvenLab/eSNPKaryotyping/eSNPKaryotyping")
+
 
     # The following programs should be installed on your computer:
-     # 1. Tophat2 (install to the Linux path. If not, give the full path to the tophat2 function in the Tophat function)
+    # 1. Tophat2 (install to the Linux path. If not, give the full path to the tophat2 function in the Tophat function)
     # 2. Bowtie2
     # 3. GATK
     # 4. Picard
