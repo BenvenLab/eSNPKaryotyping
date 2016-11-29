@@ -15,10 +15,10 @@ OpenSRA<-function(File,Library_Type,SRAPath){
   command = "Wrong Library Type"  
   
   if(Library_Type=="Single"){
-    command = paste(SRAPath,"fastq-dump", File, "-O", Output_Dir)}
+    command = paste(SRAPath,"fastq-dump ", File, " -O ", Output_Dir,sep="")}
   
   if(Library_Type=="Paired"){
-    command = paste(SRAPath,"fastq-dump --split-files", File, "-O", Output_Dir)}
+    command = paste(SRAPath,"fastq-dump --split-files ", File, " -O ", Output_Dir,sep="")}
   
   print(command)
   
