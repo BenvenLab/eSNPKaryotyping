@@ -13,8 +13,8 @@
 #' @export
 #' @return None
 
-SRAtoSNP<-function(File,Library_Type,TopHat_Threads,Transcript_Anotations,Bowtie_Genome_Index,Genome_FA,Picard_Path,GATK_Path,Organism){
-  OpenSRA(File,Library_Type)
+SRAtoSNP<-function(File,Library_Type,TopHat_Threads,Transcript_Anotations,Bowtie_Genome_Index,Genome_FA,SRAPath,Picard_Path,GATK_Path,Organism){
+  OpenSRA(File,Library_Type,SRAPath)
   Output_Dir=unlist(strsplit(File,".sra",fixed=T))
   
   dir=paste(Output_Dir,"/FASTQ/",sep="")
