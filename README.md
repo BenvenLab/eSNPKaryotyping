@@ -14,9 +14,11 @@
 
     Before Use  
    
-    # Install eSNP-Karyotyping Package:
-    # 1. Install.packages("devtools")
-    # 2. Run the following line: install_github("BenvenLab/eSNPKaryotyping/eSNPKaryotyping")
+    # Install and load eSNP-Karyotyping package by runing this lines in R:
+    install.packages("devtools")
+    library("devtools")
+    install_github("BenvenLab/eSNPKaryotyping/eSNPKaryotyping")
+    library("eSNPKaryotyping")
 
 
     # The following programs should be installed on your computer:
