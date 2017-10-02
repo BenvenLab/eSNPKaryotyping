@@ -10,10 +10,10 @@
 
 
 CreateVCF<-function(Directory,Genome_Fa,Picard_Path,GATK_Path){
-  newDir = substring(Directory,3)
-  Genome_Fa=substring(Genome_Fa,3)
+  newDir = Directory
+  Genome_Fa=
   
-  setwd(paste( "~/",newDir, sep=""))
+  setwd(newDir)
   comm = paste("java -jar ",Picard_Path, "picard.jar AddOrReplaceReadGroups.jar  I=accepted_hits.bam O=accepted_hits_rg.bam ID=\"n\" LB=\"lb\" PL=\"illumina\" PU=\"pu\" SM=\"ES\"",sep="")
   print("======================")
   print(comm)
