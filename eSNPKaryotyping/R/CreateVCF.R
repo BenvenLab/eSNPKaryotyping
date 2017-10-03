@@ -11,7 +11,7 @@
 
 CreateVCF<-function(Directory,Genome_Fa,Picard_Path,GATK_Path){
 
-  setwd(newDir)
+  setwd(Directory)
   comm = paste("java -jar ",Picard_Path, "picard.jar AddOrReplaceReadGroups  I=",Directory,"accepted_hits.bam O=accepted_hits_rg.bam ID=\"n\" LB=\"lb\" PL=\"illumina\" PU=\"pu\" SM=\"ES\"",sep="")
   print("======================")
   print(comm)
@@ -19,7 +19,7 @@ CreateVCF<-function(Directory,Genome_Fa,Picard_Path,GATK_Path){
   system(comm)
   setwd("~/")
   
-  comm = paste("java -jar ",Picard_Path, "picard.jar ReorderSam I=",Directory, "accepted_hits_rg.bam O=",newDir, "accepted_hits_rg_sorted.bam R=",Genome_Fa, sep="")
+  comm = paste("java -jar ",Picard_Path, "picard.jar ReorderSam I=",Directory, "accepted_hits_rg.bam O=",Directory, "accepted_hits_rg_sorted.bam R=",Genome_Fa, sep="")
   print("======================")
   print(comm)
   print("======================")
