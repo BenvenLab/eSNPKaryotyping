@@ -20,7 +20,7 @@ SRAtoSNP<-function(File,Library_Type,TopHat_Threads,Transcript_Anotations,Bowtie
   dir=paste(Output_Dir,"/FASTQ/",sep="")
   Tophat(Directory=dir,Library_Type=Library_Type,Threads = TopHat_Threads,Transcripts_Annotations = Transcript_Anotations,Bowtie_Genome_Index = Bowtie_Genome_Index)
   dir=paste(Output_Dir,"/BAM/",sep="")
-  CreatVCF(Directory=dir,Genome_Fa = Genome_FA,Picard_Path = Picard_Path,GATK_Path = GATK_Path)
+  CreateVCF(Directory=dir,Genome_Fa = Genome_FA,Picard_Path = Picard_Path,GATK_Path = GATK_Path)
   table = EditVCF(Directory=dir,Organism=Organism)
   return(table)
 }
