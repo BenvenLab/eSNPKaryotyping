@@ -25,6 +25,12 @@ SRAtoSNP(File, Library_Type, TopHat_Threads, Transcript_Anotations,
 \item{Transcripts_Annotations}{path for the transcript annotation GTF file.}
 
 \item{Genome_Fa}{Path for whole genome FASTA file}
+
+\item{dbSNP_Data_Directory}{The path for the directory where the edited dbSNP file are (created previously by the Edit_dbSNP_Files function)}
+
+\item{dbSNP_File_Name}{The edited dbSNP file names, without the chromosome number}
+
+\item{Genome_Fa_dict}{the path for the dictionary file created for the whole genome FASTA file.}
 }
 \value{
 None
