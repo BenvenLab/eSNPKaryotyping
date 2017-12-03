@@ -62,7 +62,7 @@ Plot_Zygosity_Blocks<-function(Table,Window,Max,Max2,Organism){
   }
   
   
-  rat[is.infinite(rat)==TRUE]=NA
+  rat[is.infinite(rat)==TRUE]=total_homo/total_hetro*5.5
   pval=NULL
   
   for (i in 1:((mx-2)*2)){
