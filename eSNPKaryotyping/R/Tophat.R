@@ -28,8 +28,8 @@ Tophat<-function(Directory,Library_Type,Threads,Transcripts_Annotations,Bowtie_G
   
   if(Library_Type=="Paired"){
     setwd(Directory)
-    first_read= system("ls *_1*",intern=TRUE)
-    second_read = system("ls *_2*",intern=TRUE)
+    first_read= system("ls *_1.*",intern=TRUE)
+    second_read = system("ls *_2.*",intern=TRUE)
     setwd(Output_Dir)
     read1=paste(Directory, first_read, sep="")
     read2=paste(Directory, second_read, sep="")
